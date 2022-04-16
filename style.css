@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+
+
+.container {
+    width: 1024px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.üst-kısım  {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.üstkısım-sol {
+    display: flex;
+    width: 60%;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.üstkısım-sag {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.tw {
+    width: 30px;
+    height: 30px;
+}
+
+.git {
+    width: 30px;
+    height: 30px;
+}
+
+.ins {
+    width: 30px;
+    height: 30px;
+}
+
+.çizgi {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.ilk-içerik {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.alt-içerik {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.alt-içerik-h3 {
+    width: 100%;
+}
+
+.alt-içerik-p {
+    width: 100%;
+}
+
+.ilk-içerik-sol-p {
+    width: 75%;
+}
+
+.ilk-içerik-sol-h3 {
+    width: 80%;
+}
+
+.ortaüst-kısım-sag { 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+    width: 100%;
+}
+
+
+.ilk-içerik-sag-h3 {
+    padding: 20px;
+}
+
+.ortaüst-kısım-sag div {
+    display: flex;
+}
+
+#ilkh1 {
+    padding: 0px 0px 30px;
+}
+
+.mobil-üst-kısım {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+    
+    .üst-kısım {
+        display: none;   
+    }
+
+    .ilk-içerik {
+        grid-template-columns: auto;
+    }
+
+    .alt-içerik {
+        grid-template-columns: auto;
+    }
+
+    .çizgi {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .çizgi2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    .ilk-içerik-sag-h3 {
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .ilk-içerik-sol-h3 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mobil-üst-kısım {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobil-sag {
+        height: 50px;
+        align-self: center;
+    }
+    .ilk-içerik-jpg {
+        width: 100%;
+    }
+    .alt-içerik img {
+        width: 100%;
+    }
+} 
